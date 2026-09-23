@@ -1,0 +1,16 @@
+export const skills = [
+	'TypeScript',
+	'JavaScript',
+	'Node.js',
+	'PostgreSQL',
+	'Git',
+	'Nest.js',
+	'TypeORM',
+	'Docker',
+	'REST API',
+	'JWT',
+	'Authentication',
+	'Swagger',
+	'OpenAPI',
+	'Redis',
+]

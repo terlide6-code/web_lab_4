@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CV</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			/* Internal CSS: one example of embedded page-specific styling. */
+			#career-goal {
+				background: #eff6ff;
+				border-left-color: #2563eb;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="page-header">
+			<div>
+				<h1>Nazarii Perestiuk CV</h1>
+				<h2>Backend Developer</h2>
+			</div>
+			<div class="header-actions">
+				<p class="header-note" style="color: #1d4ed8">
+					Open to backend opportunities
+				</p>
+				<button id="theme-toggle" class="theme-toggle" type="button">
+					Day theme
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<section class="cv-layout">
+				<section class="card skills-card" data-section="skills">
+					<h3>Skills:</h3>
+					<ul class="skills-list">
+						<li>TypeScript</li>
+						<li>JavaScript</li>
+						<li>Node.js</li>
+						<li>PostgreSQL</li>
+						<li>Git</li>
+						<li>Nest.js</li>
+						<li>TypeORM</li>
+						<li>Docker</li>
+						<li>REST API</li>
+						<li>JWT</li>
+						<li>Authentication</li>
+						<li>Swagger</li>
+						<li>OpenAPI</li>
+						<li>Redis</li>
+					</ul>
+				</section>
+
+				<section
+					id="career-goal"
+					class="card highlighted-card"
+					data-section="goal"
+				>
+					<h3>Career goal:</h3>
+					<p>
+						Build reliable backend services with clean architecture, secure
+						APIs, and thoughtful database design.
+					</p>
+				</section>
+
+				<section class="card" data-section="education">
+					<h3>Education:</h3>
+					<p>
+						Cybersecurity, Lviv Polytechnic National University
+						<i>09/2025 - now</i>
+					</p>
+				</section>
+
+				<section class="card projects-card" data-section="projects">
+					<h3>Projects:</h3>
+					<article class="project">
+						<p>
+							<b>Wotch</b>, Social platform for tracking movies, sharing
+							ratings, connecting with friends, and discovering content through
+							groups and activity feeds. (NestJS, PostgreSQL, TypeScript,
+							Docker, TypeORM)
+						</p>
+					</article>
+					<article class="project">
+						<p>
+							<b>Preferra CRM</b>, AI-powered platform for managing personal
+							preferences and generating personalized gift ideas for friends and
+							family. (NestJS, PostgreSQL, TypeScript, Docker, TypeORM)
+						</p>
+					</article>
+					<article class="project">
+						<p>
+							<b>AutoTrack</b>, AI-powered vehicle service history platform for
+							tracking maintenance records, monitoring car health, and receiving
+							intelligent maintenance recommendations. (NestJS, PostgreSQL,
+							TypeScript, Docker, TypeORM)
+						</p>
+					</article>
+				</section>
+			</section>
+			<section class="comment_section">
+				<h1>Comments:</h1>
+				<div id="comments"></div>
+			</section>
+		</main>
+
+		<footer class="contact-panel">
+			<p><b>Phone:</b> <i>+380678015643</i></p>
+			<p id="sys_info"></p>
+			<a
+				href="https://github.com/terlide6-code"
+				target="_blank"
+				rel="noreferrer"
+			>
+				GitHub Nazarii
+			</a>
+		</footer>
+
+		<div id="feedback-modal" class="modal">
+			<div class="modal-content">
+				<button id="close-modal" class="close-modal" type="button">
+					Закрити
+				</button>
+				<h2>Форма зворотного зв'язку</h2>
+				<form action="https://formspree.io/f/xppwdekg" method="POST">
+					<label>
+						Ім'я
+						<input type="text" name="name" required />
+					</label>
+
+					<label>
+						Email
+						<input type="email" name="email" required />
+					</label>
+
+					<label>
+						Номер телефону
+						<input type="tel" name="phone" required />
+					</label>
+
+					<label>
+						Повідомлення
+						<textarea name="message" rows="5" required></textarea>
+					</label>
+
+					<button class="submit-button" type="submit">Надіслати</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
